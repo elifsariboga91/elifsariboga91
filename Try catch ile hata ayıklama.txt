@@ -1,0 +1,24 @@
+internal class NewBaseType
+{
+    private static void Main(string[] args)
+    {
+        try
+        {
+            Console.WriteLine("bir sayı giriniz : ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("girmiş olduğunuz sayı :" + sayi);
+        }
+        catch (Exception ex)
+        {
+
+            Console.WriteLine("hatası: " + ex.Message.ToString());
+        }
+
+        finally
+        {
+            Console.WriteLine("işlem başarılı");
+        }
+    }
+}
+}
+}
